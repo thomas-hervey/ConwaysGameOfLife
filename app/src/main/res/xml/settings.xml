@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <ListPreference 
+        android:key="CELL_COLOR_CHOICE"
+        android:title="Cell Color"
+        android:summary="@string/cell_color_choice_text"
+        android:entries="@array/cell_color_options" 
+        android:entryValues="@array/cell_color_values"
+        android:dialogTitle="Pick a color"
+        android:defaultValue="BLUE" />
+    
+    <ListPreference 
+        android:key="CELL_SIZE_CHOICE"
+        android:title="Cell Size"
+        android:summary="@string/cell_size_choice_text"
+        android:entries="@array/cell_size_options"
+        android:entryValues="@array/cell_size_values"
+        android:dialogTitle="Pick a size"
+        android:defaultValue="5" />
+    
+    <ListPreference 
+        android:key="GENERATION_SPEED_CHOICE"
+        android:title="Generation Speed"
+        android:summary="@string/generation_speed_choice_text"
+        android:entries="@array/generation_speed_options" 
+        android:entryValues="@array/generation_speed_values"
+        android:dialogTitle="Pick a speed"
+        android:defaultValue="100" />
+    
+    <ListPreference 
+        android:key="COLOR_CHANGING_OPTIONS"
+        android:title="Generation Color"
+        android:summary="@string/color_changing_options_text"
+        android:entries="@array/color_changing_options" 
+        android:entryValues="@array/color_changing_values"
+        android:dialogTitle="Pick a speed"
+        android:defaultValue="100" />
+ 
+    
+</PreferenceScreen>

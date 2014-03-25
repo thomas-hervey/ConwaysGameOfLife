@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/newGame_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newGame_text" />
+
+    <Button
+        android:id="@+id/exitGame_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newGame_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/newGame_button"
+        android:text="@string/exitGame_text" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exitGame_button"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/template_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/template_header_text" />
+
+        <Button
+            android:id="@+id/osc_template_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/still_template_button"
+            android:layout_alignRight="@+id/still_template_button"
+            android:layout_below="@+id/still_template_button"
+            android:text="@string/osc_template_text" />
+
+        <Button
+            android:id="@+id/glider_template_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/osc_template_button"
+            android:layout_alignRight="@+id/osc_template_button"
+            android:layout_below="@+id/osc_template_button"
+            android:text="@string/glider_template_text" />
+
+        <Button
+            android:id="@+id/still_template_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/template_header"
+            android:text="@string/still_template_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Cell Color Options -->
+    <string-array name="cell_color_options">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="cell_color_values">
+        <item>-16776961</item>
+        <item>-16711936</item>
+        <item>-65536</item>
+        <item>-256</item>
+    </string-array>
+    
+    <!-- Cell Size Options -->
+    <string-array name="cell_size_options">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="cell_size_values">
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+    </string-array>
+    
+    <!-- Generation Speed Options -->
+    <string-array name="generation_speed_options">
+        <item>Slow</item>
+        <item>Medium</item>
+        <item>Fast</item>
+    </string-array>
+    <string-array name="generation_speed_values">
+        <item>500</item>
+        <item>150</item>
+        <item>50</item>
+    </string-array>
+    
+    <!-- Color Change Options -->
+     <string-array name="color_changing_options">
+        <item>Solid</item>
+        <item>Sequential</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="color_changing_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/setColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setColor_text"/>
+
+    <RadioGroup
+        android:id="@+id/colorGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setColor" >
+
+        <RadioButton
+            android:id="@+id/blueColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/blueColor_text" />
+
+        <RadioButton
+            android:id="@+id/greenColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greenColor_text" />
+
+        <RadioButton
+            android:id="@+id/redColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redColor_text" />
+
+        <RadioButton
+            android:id="@+id/yellowColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yellowColor_text" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/colorChangeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/colorGroup"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="32dp" >
+
+        <RadioButton
+            android:id="@+id/solidColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/solidColor_text"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/changingColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/changingColor_text" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cellSizeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="51dp" >
+
+        <RadioButton
+            android:id="@+id/cellSizeSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellSizeSmall_text"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/cellSizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellSizeMedium_text" />
+
+        <RadioButton
+            android:id="@+id/cellSizeLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellSizeLarge_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/setCellSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cellSizeGroup"
+        android:layout_alignParentLeft="true"
+        android:text="@string/setCellSize_text" />
+    
+</RelativeLayout>
